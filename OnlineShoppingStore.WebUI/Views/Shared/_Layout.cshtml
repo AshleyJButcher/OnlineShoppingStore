@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store - @ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse" role="navigation">
+        <a class="navbar-brand" href="#">
+            <span class="hidden-xs">Online Shopping Store</span>
+            <div class="visible-xs">Online</div>
+            <div class="visible-xs">Shopping</div>
+            <div class="visible-xs">store</div>
+        </a>
+        @Html.Action("Summary", "Cart")
+    </div>
+    <div class="row panel">
+        <div id="catergories" class="col-lg-3">
+            @Html.Action("Menu", "Nav");
+        </div>
+        <div class="col-lg-7">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
