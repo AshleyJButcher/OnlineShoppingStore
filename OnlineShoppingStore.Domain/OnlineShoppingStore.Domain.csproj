@@ -79,21 +79,33 @@
   <ItemGroup>
     <Compile Include="Abstract\IOrderProcessor.cs" />
     <Compile Include="Abstract\IProductRepository.cs" />
+    <Compile Include="Abstract\IAuthentication.cs" />
     <Compile Include="Concrete\EFDBContext.cs" />
     <Compile Include="Concrete\EFProductRepository.cs" />
     <Compile Include="Concrete\EmailOrderProcessor.cs" />
     <Compile Include="Concrete\EmailSettings.cs" />
+    <Compile Include="Concrete\FormsAuthenticationProvider.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\CartLine.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ShippingDetails.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Migrations\201703100901336_initial.cs" />
+    <Compile Include="Migrations\201703100901336_initial.Designer.cs">
+      <DependentUpon>201703100901336_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703100901336_initial.resx">
+      <DependentUpon>201703100901336_initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
