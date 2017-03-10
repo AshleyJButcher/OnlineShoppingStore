@@ -28,7 +28,7 @@ Publish to Azure
 
 * [Moq](https://www.nuget.org/packages/Moq/) - Mocking Library
 * [Ninject](http://www.ninject.org/) - Dependency Injection
-* [ASP.NEt](https://www.microsoft.com) - Programming Language
+* [ASP.Net](https://www.microsoft.com) - Programming Language
 
 ## Contributing
 Ashley Butcher
